@@ -13,13 +13,11 @@ function generateNew(event) {
   $(`#appendStuffHere`).append(`
     <div id="generated">
       <p>
-        <!-- something displaying the clicks count-->
         <button id="yellow-button">Yellow</button>
         <button id="delete-button">Delete</button>
       </p>
     </div>
   `);
-  countClicks();
 }
 
 let clicks = 0;
@@ -37,3 +35,18 @@ function deleteButton(event) {
   console.log("Delete clicked");
   $(this).parent().parent().remove();
 }
+
+/*
+
+Stuff I tried to get the countClicks function to display inside the <p> tag:
+
+
+          <embed type=`text/js`, src=`countClicks(clicks).js`>
+
+        $(this).append(countClicks)
+
+        $("appendStuffHere".child).append(countClicks())
+
+        .... and a lot of other stuff I didn't save, but I worked on it for SO LONG . 
+
+*/
