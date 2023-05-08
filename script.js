@@ -30,7 +30,7 @@ function countClicks() {
 
 function yellowButton(event) {
   console.log("Yellow clicked!");
-  document.getElementById("generated").style.backgroundColor = "yellow";
+  $(this).parent().parent().css({ "background-color": "yellow" });
 }
 
 function deleteButton(event) {
